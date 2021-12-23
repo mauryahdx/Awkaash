@@ -1,7 +1,19 @@
+
+:root{
+  --color-1:#05668D;
+  --color-2:#427AA1;
+  --color-3:#EBF2FA;
+  --color-4:#679436;
+  --color-5:#A5BE00;
+ 
+}
 .App {
   text-align: center;
 }
 
+.logo {
+  height: 4rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

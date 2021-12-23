@@ -4,10 +4,11 @@ import Navigation from './components/Navigation';
 //import 
 function App() {
   return (
-   <>   
+   <div>   
     
-      <img src='static/images/logo.png'/>
-   </>
+      <img  className="logo" src='static/images/awkaash_logo.svg'/>
+      <div><img className="App-logo" src='static/images/icon.svg'></img></div>
+   </div>
 
 
   );
