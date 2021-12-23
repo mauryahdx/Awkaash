@@ -4,8 +4,11 @@ import Navigation from './components/Navigation';
 //import 
 function App() {
   return (
-   
-    <div> Jabbu</div>
+   <>   
+    
+      <img src='static/images/logo.png'/>
+   </>
+
 
   );
 }

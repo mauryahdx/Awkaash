@@ -55,7 +55,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'awkaash-frontend/build')
+            os.path.join(os.path.join(BASE_DIR, 'awkaash-frontend'), 'build'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -120,10 +120,16 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-            os.path.join(BASE_DIR, 'awkaash-frontend/build/static/'),
-            
-        ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'awkaash-frontend/build/')
+    os.path.join(os.path.join(BASE_DIR, 'awkaash-frontend'), 'build', 'static'),
+    
+            ]
+
+
+
+#ROOT_URLCONF = os.environ.get("ROOT_URLCONF", os.path.join(os.path.join(BASE_DIR, 'awkaash-frontend'), 'build'))
+
+
+STATIC_ROOT = os.path.join(os.path.join(BASE_DIR, 'awkaash-frontend'), 'build')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
