@@ -8,6 +8,7 @@ import Login from './pages/Login';
 
 //import 
 function App() {
+  var year = new Date();
   return (
    <div className='container'>   
    <Router>
@@ -19,7 +20,9 @@ function App() {
       </Routes>
      
    </Router>
-      
+      <p>
+      Copyright &copy; {year.getFullYear()} <a href='https://github.com/mauryahdx'>Surya Prakash Mourya</a>
+      </p>
       
    </div>
 

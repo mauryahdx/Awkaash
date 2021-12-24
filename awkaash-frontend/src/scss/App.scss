@@ -20,7 +20,7 @@
     pointer-events: none;
     position: relative;
     display: block;
-    margin: 10rem auto 10rem auto;
+    margin: 0rem auto 0rem auto;
   }
   
   @media (prefers-reduced-motion: no-preference) {
@@ -101,6 +101,20 @@
   span{
     color:#1B998B;
   }
-  body{
+
+  body { 
       overflow-y: hidden;
+      text-align: center;
   }
+
+.home{
+   margin-top: 10rem; 
+   //margin-bottom: 7rem;
+}
+
+p{
+    position: absolute;
+    width: 90vw;
+    bottom: 0;
+    //right: 0;
+}
