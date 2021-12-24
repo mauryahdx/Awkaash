@@ -1,12 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+import './scss/App.scss';
 import Navigation from './components/Navigation';
+import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+
 //import 
 function App() {
   return (
    <div className='container'>   
+   <Router>
       <Navigation></Navigation>
-      <div className='flex'><div className=' para'><h1>Welcome to <span>Awkaash</span> .</h1> <br></br> <h2>A leave sanction software for <span>IIIT-DMJ</span> .</h2></div><img className="App-logo" src='static/images/icon.svg'></img></div>
+      <Routes>
+          <Route path="/" element= {<Home/>}></Route>
+          <Route path="/login" exact element= {<Login/>}></Route>
+          <Route path="/signup" exact element= {<SignUp/>}></Route>
+      </Routes>
+     
+   </Router>
+      
+      
    </div>
 
 

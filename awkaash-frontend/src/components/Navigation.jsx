@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom"
 
 
 const Navigation = () => {
     return (
         <nav className="flex">
-            <img  className="logo" src="static/images/awkaash_logo.svg" alt="Awkaash" />
+            
+            <Link to="/"><img  className="logo" src="static/images/awkaash_logo.svg" alt="Awkaash" /></Link>
             <div className=" flex">
-              <a href="">Login</a>
-              <button>Get Started</button>
+              <Link to="/login"><a>Login</a></Link>
+              <Link to="/signup"><button>Get Started</button></Link>
+              
             </div>
         </nav>
     )
