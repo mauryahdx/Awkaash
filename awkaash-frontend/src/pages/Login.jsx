@@ -3,7 +3,19 @@
 const Login = () => {
     return (
         <div>
-            This is Login Page Bro
+            <form action="submit" method="post">
+                <div>
+                <label htmlFor="username">Username :</label>
+                <input type="text" name="username"/><br />
+                </div>
+                <div>
+                <label htmlFor="pass">Password :</label>
+                <input type="password" name="pass"/><br />
+                </div>
+
+
+                <button>Login</button>
+            </form>
         </div>
     )
 }

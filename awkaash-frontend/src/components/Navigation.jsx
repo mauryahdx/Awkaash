@@ -8,8 +8,7 @@ const Navigation = () => {
             <Link to="/"><img  className="logo" src="static/images/awkaash_logo.svg" alt="Awkaash" /></Link>
             <div className=" flex">
               <Link to="/login"><a>Login</a></Link>
-              <Link to="/signup"><button>Get Started</button></Link>
-              
+              <Link to="/signup"><button>Get Started</button></Link>  
             </div>
         </nav>
     )
