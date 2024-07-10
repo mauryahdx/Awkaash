@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    
+    &__inner{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        
+        width: 12vw;
+        font-weight: 700;
+        color: #282c34;
+    }
+}
